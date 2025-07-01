@@ -193,9 +193,21 @@ const slideActions = {
     nextArrowDelay = 2.6;
   },
   7: () => {
-    gsap.from('.slide--7__skin--1, .slide--7__block--1', { opacity: 0, duration: 0.75, delay: 1, x: '30%' });
-    gsap.from('.slide--7__skin--2, .slide--7__block--2', { opacity: 0, duration: 0.65, delay: 1.6, x: '-30%' });
-    nextArrowDelay = 2.6;
+    gsap.from('.slide--7__skin--1', { opacity: 0, duration: 0.75, delay: 1 });
+    gsap.from('.slide--7__block--1', { opacity: 0, duration: 0.5, delay: 1 });
+    gsap.from('.slide--7__block--1 .slide--7__icon--1', { opacity: 0, duration: 0.5, delay: 1.25 });
+    gsap.from('.slide--7__block--1 .slide--7__icon--2', { opacity: 0, duration: 0.5, delay: 1.5 });
+    gsap.from('.slide--7__block--1 .slide--7__icon--3', { opacity: 0, duration: 0.5, delay: 1.75 });
+    gsap.from('.slide--7__block--1 .slide--7__icon--4', { opacity: 0, duration: 0.5, delay: 2 });
+    gsap.from('.slide--7__block--1 .slide--7__icon--5', { opacity: 0, duration: 0.5, delay: 2.25 });
+    gsap.from('.slide--7__skin--2', { opacity: 0, duration: 0.75, delay: 2.75 });
+    gsap.from('.slide--7__block--2', { opacity: 0, duration: 0.5, delay: 2.75 });
+    gsap.from('.slide--7__block--2 .slide--7__icon--1', { opacity: 0, duration: 0.5, delay: 3 });
+    gsap.from('.slide--7__block--2 .slide--7__icon--2', { opacity: 0, duration: 0.5, delay: 3.25 });
+    gsap.from('.slide--7__block--2 .slide--7__icon--3', { opacity: 0, duration: 0.5, delay: 3.5 });
+    gsap.from('.slide--7__block--2 .slide--7__icon--4', { opacity: 0, duration: 0.5, delay: 3.75 });
+    gsap.from('.slide--7__block--2 .slide--7__icon--5', { opacity: 0, duration: 0.5, delay: 4 });
+    nextArrowDelay = 5;
   },
   8: () => {
     $('.arrow--prev').removeClass('arrow--white');
@@ -278,12 +290,12 @@ const slideActions = {
       $(this).addClass('active');
 
       gsap.to($(this).find('span'), { opacity: 1, duration: 0.75, delay: 0.5 });
-      gsap.to('.slide--13__right-content', { opacity: 1, duration: 0.75, delay: 1.25, y: 0 });
+      gsap.to('.slide--13__right-content, .slide--13__right p.note', { opacity: 1, duration: 0.75, delay: 0.5 });
 
       nextButtonTimeout = setTimeout(() => {
         $(nextSlideButton).removeClass(hiddenArrowClass);
         $(prevSlideButton).removeClass(hiddenArrowClass);
-      }, 2.25 * 1000);
+      }, 1.5 * 1000);
     })
   },
   14: () => {

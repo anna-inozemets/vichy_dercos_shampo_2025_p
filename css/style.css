@@ -2453,6 +2453,20 @@ p.slide-numbering.left {
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
 }
+.slide--19__bg::before {
+  content: '';
+  position: absolute;
+  top: 9em;
+  left: 50%;
+  height: 92em;
+  width: 43em;
+  z-index: 1;
+  background-image: url(../images/sl22-bottle-7.webp);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateX(calc(-50% - 14.8em)) scaleY(0.95) skewY(1deg);
+}
 .slide--19__bottom-bg {
   position: absolute;
   top: 95.5em;
@@ -3422,8 +3436,7 @@ p.slide-numbering.left {
 .slide--13__left p.formula.active::before {
   opacity: 0;
 }
-.slide--13__right-content {
-  transform: translateY(10em);
+.slide--13__right-content, .slide--13__right p.note {
   opacity: 0;
 }
 
