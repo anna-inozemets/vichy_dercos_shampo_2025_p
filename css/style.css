@@ -1354,7 +1354,7 @@ p.slide-numbering.left {
 .slide--10::before {
   left: 0;
   height: 97em;
-  background: linear-gradient(to bottom, #012210 0%, #015328 100%);
+  background-color: #011807;
   z-index: 1;
 }
 .slide--10::after {
@@ -1367,8 +1367,8 @@ p.slide-numbering.left {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
-  width: 193em;
+  transform: translateX(calc(-50% - 24.5em));
+  width: 226em;
   z-index: 3;
 }
 .slide--10__bg img {
@@ -1385,7 +1385,7 @@ p.slide-numbering.left {
   left: -5em;
   right: -5em;
   height: 34vh;
-  background: linear-gradient(to right, #e3e3e3 0%, #e8e8e8 50%, #e1e1e1 100%);
+  background: linear-gradient(to right, #dfdfdf 0%, #e3e3e3 50%, #e1e1e1 100%);
   transform: rotate(6.5deg);
   transform-origin: top center;
   z-index: 2;
@@ -2415,7 +2415,7 @@ p.slide-numbering.left {
 
 /*#region sl19*/
 .slide--19 {
-  background: linear-gradient(to right, #e3e3e3 0%, #e8e8e8 50%, #e1e1e1 100%);
+  background: linear-gradient(to right, #e3e3e3 0%, #e2e2e2 50%, #e1e1e1 100%);
   color: var(--light-c);
   padding-left: 5em;
 }
@@ -2428,21 +2428,21 @@ p.slide-numbering.left {
 .slide--19::before {
   left: 0;
   height: 98em;
-  background: linear-gradient(to bottom, #002611 0%, #024d24 50%, #035d2c 100%);
+  background: linear-gradient(to bottom, #021908 45%, #03230f 100%);
   z-index: 1;
 }
 .slide--19::after {
   right: 0;
   height: 113em;
-  background: linear-gradient(to bottom, #031a0b 0%, #012b14 50%, #043919 100%);
+  background-color: #011807;
   z-index: 1;
 }
 .slide--19__bg {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
-  width: 193em;
+  transform: translateX(calc(-50% + 9em));
+  width: 249em;
   z-index: 3;
 }
 .slide--19__bg img {
@@ -2453,27 +2453,13 @@ p.slide-numbering.left {
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
 }
-.slide--19__bg::before {
-  content: '';
-  position: absolute;
-  top: 9em;
-  left: 50%;
-  height: 92em;
-  width: 43em;
-  z-index: 1;
-  background-image: url(../images/sl22-bottle-7.webp);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  transform: translateX(calc(-50% - 14.8em)) scaleY(0.95) skewY(1deg);
-}
 .slide--19__bottom-bg {
   position: absolute;
   top: 95.5em;
   left: -5em;
   right: -5em;
   height: 34vh;
-  background: linear-gradient(to right, #e3e3e3 0%, #e8e8e8 50%, #e1e1e1 100%);
+  background: linear-gradient(to right, #e3e3e3 0%, #e2e2e2 50%, #e1e1e1 100%);
   transform: rotate(6.5deg);
   transform-origin: top center;
   z-index: 2;
